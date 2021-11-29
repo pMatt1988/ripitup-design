@@ -26,7 +26,9 @@
         <h3 class="text-4xl">“Rip It Up”</h3>
         <h4 class="text-3xl">American Hairless Terriers</h4>
     </header>
-    <nav id="nav" class="fixed h-screen w-screen sm:h-auto sm:w-auto z-50 sm:static sm:block bg-green-600 text-white transition-translate duration-500" data-toggle="false">
+    <nav id="nav"
+         class="fixed h-screen w-screen sm:h-auto sm:w-auto z-50 sm:static sm:block bg-green-600 text-white transition-translate duration-500"
+         data-toggle="false">
         <span class="material-icons cursor-pointer hover-scale nav-toggle">close</span>
         <ul class="flex flex-col sm:flex-row items-center sm:justify-center h-16">
             <li class="nav-item"><a href="#">Home</a></li>
@@ -39,19 +41,82 @@
     </nav>
     <div class="p-8 sm:p-0 flex-grow relative bg-green-600 sm:bg-transparent">
 
-        <img class="absolute right-9 top-9 w-28 sm:top-2 sm:right-2 sm:w-64" src="img/AKCbreeder-of-merit.png" alt="AKC Breeder of Merit">
-        <img class="sm:p-0 hero-image sm:absolute w-full h-auto sm:h-full sm:object-cover" src="img/kane.png" alt="AKC GRCHG KANE">
+        <img class="absolute right-9 top-9 w-28 sm:top-2 sm:right-2 sm:w-64" src="img/AKCbreeder-of-merit.png"
+             alt="AKC Breeder of Merit">
+        <img class="sm:p-0 hero-image sm:absolute w-full h-auto sm:h-full sm:object-cover sm:object-right"
+             src="img/kane.png"
+             alt="AKC GRCHG KANE">
         <div class="sm:absolute right-2 bottom-8 text-center">
-            <h3 class="text-white text-2xl">AKC GRCHG "KANE"</h3>
-            <button class="button-blue">Our Dogs</button>
+            <h3 class="text-white text-2xl text-shadow">AKC GRCHG "KANE"</h3>
+            <button class="button-blue mt-4">Our Dogs!</button>
         </div>
 
+    </div>
+</section>
+
+<section class="p-16">
+    <h2 class="text-center font-heading font-bold text-4xl text-green-900">
+        American Hairless Terriers
+    </h2>
+    <h4 class="text-center font-heading text-2xl font-light pb-8">At a Glance</h4>
+
+    <div class="w-3/4 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+            <img src="img/dog.png" class="w-full" alt="Dog looking off camera">
+        </div>
+        <div>
+            <p>A natural variation of the Rat Terrier, this completely hairless dog (some may have eyebrows and
+                whiskers) is
+                a lively, intelligent, and friendly companion that is often the perfect answer for those with
+                allergies.</p>
+        </div>
+    </div>
+    <div class="flex justify-center p-8">
+        <button class="button-blue">Read More!</button>
+    </div>
+</section>
+<section class="text-white bg-green-400 p-16">
+    <div class="w-3/4 mx-auto text-center">
+        <p class="text-shadow">If you’re interested in one of our puppies or retired adults you can fill out our puppy
+            application at the link
+            below!!</p>
+
+        <button class="button-blue mt-8">Puppy Application</button>
+
+    </div>
+    <div class="text-center my-16">
+        <h2 class="text-3xl text-shadow">Contact Us</h2>
+
+        <div class="bg-green-800 p-16 mt-4 text-left">
+            <div class="grid sm:grid-cols-2 sm:gap-4">
+                <div class="pb-4">
+                    <label class="block">First Name</label>
+                    <input class="w-full rounded-md text-gray-600 p-1" type="text">
+                </div>
+                <div class="pb-4">
+                    <label class="block">Last Name</label>
+                    <input class="w-full rounded-md text-gray-600 p-1" type="text">
+                </div>
+            </div>
+            <div class="pb-4">
+                <label class="block">Email</label>
+                <input class="w-full rounded-md text-gray-600 p-1" type="email">
+            </div>
+            <div>
+                <label class="block">Email</label>
+                <textarea class="w-full h-40 p-1 text-gray-600 rounded-md"></textarea>
+            </div>
+            <div class="text-center">
+                <button class="button-blue mt-8">Submit</button>
+
+            </div>
+        </div>
     </div>
 </section>
 <script>
     let navToggle = document.getElementsByClassName("nav-toggle");
     for (let item of navToggle) {
-        item.addEventListener("click", function() {
+        item.addEventListener("click", function () {
             let nav = document.getElementById("nav");
             nav.dataset.toggle = nav.dataset.toggle === "false" ? "true" : "false";
         });

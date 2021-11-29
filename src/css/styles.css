@@ -43,7 +43,7 @@ body {
 }
 
 nav {
-    left: -100%;
+    left: -110%;
     @apply p-8
 }
 
@@ -80,7 +80,8 @@ nav {
 }
 
 #nav[data-toggle="true"] {
-    transform: translate(100%, 0);
+    transform: translate(105%, 0);
+    display: block;
 }
 
 @responsive {
