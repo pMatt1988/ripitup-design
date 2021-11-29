@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "postcss src/css/styles.css -o public/css/styles.css",
+    "watch": "postcss src/css/styles.css -o public/css/styles.css -w --poll --verbose"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "postcss": "^8.4.4",
+    "postcss-loader": "^6.2.1",
+    "tailwindcss": "^2.2.19"
+  }
+}
