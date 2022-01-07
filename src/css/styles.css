@@ -13,8 +13,6 @@
 @tailwind screens;
 
 
-
-
 html {
     font-size: 14px;
     box-sizing: border-box;
@@ -55,19 +53,28 @@ nav {
     .nav-toggle {
         display: none !important;
     }
+
     nav {
         @apply p-0
     }
+
     .nav-item {
         @apply px-4 py-0 w-auto hover:bg-transparent text-base
+    }
+
+    #section__header {
+        height: 25vh;
+    }
+
+    #section__hero {
+        height: 75vh;
     }
 }
 
 .button-blue {
-    box-shadow:
-            4px 4px 4px 0 rgba(0, 0, 0, 0.2),
-            inset -4px -4px 6px rgba(0, 0, 0, 0.2);
-    overflow:visible;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px rgba(0, 0, 0, 0.2);
+    overflow: visible;
     @apply bg-blue-400 p-2 text-shadow w-40 text-white;
 }
 
@@ -79,9 +86,14 @@ nav {
     @apply transition-transform duration-500 ease-in-out transform hover:scale-125;
 }
 
-#nav[data-toggle="true"] {
-    transform: translate(105%, 0);
-    display: block;
+@screen msm {
+    #nav[data-toggle="true"] {
+        transform: translate(100%, 0);
+
+        display: block;
+
+    }
+
 }
 
 @responsive {
